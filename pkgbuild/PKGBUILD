@@ -1,0 +1,15 @@
+# $Id$
+# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+
+pkgname=plasma5-aurorae-theme-forman
+pkgver=1.0
+pkgrel=1
+pkgdesc="FormaN aurorae theme for the plasma desktop"
+arch=('any')
+url='https://github.com/blackbird-os/plasma5-aurorae-theme-forman'
+license=('GPL')
+
+package() {
+  cd ../..
+  cp -aR usr $pkgdir/
+}
